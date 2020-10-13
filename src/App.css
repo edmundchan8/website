@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* NAVIGATION */
+
+/* Remove dots on list nav */
+ul {
+  list-style-type: none;
+}
+
+li {
+  /* Padding on the list nav to space things out */
+  padding: 16px;
+  /* Make list nav horziontal and center align */
+  display: inline-block;
+}
+
+
+
