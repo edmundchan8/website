@@ -1,8 +1,16 @@
 import React, { Component } from 'react'
+import styled from "styled-components";
 
 class Navigation extends Component {
     render() {
+        const StyledDiv = styled.div`
+        background-color: grey;
+        margin: 5px;
+        border: solid red 5px ;
+        border-radius: 25px;
+      `;
         return (
+            <StyledDiv>
             <nav>
                 <ul>
                     <li a href="">About Me</li>
@@ -11,6 +19,7 @@ class Navigation extends Component {
                     <li a href="">Contact</li>
                 </ul>
             </nav>
+            </StyledDiv>
         )
     }
 }

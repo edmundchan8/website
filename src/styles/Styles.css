@@ -1,0 +1,19 @@
+import React from 'react'
+
+function Styles() {
+
+    const isMobile = window.innerWidth < 480;
+    const alignleft = { textAlign: 'left'}
+    const alignCenter = { textAlign: 'center'}
+    const alignPosition = isMobile ? alignCenter : alignleft
+    const flexContent = {display: 'flex', alignItems: 'center' }
+    const unFlexContent = {display: 'block'}
+    const flexContainer = isMobile ? unFlexContent : flexContent
+    const paddingAll = { padding: '10px'}
+
+    return (
+        <div></div>
+    )
+}
+
+export default Styles

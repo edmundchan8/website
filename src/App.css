@@ -1,41 +1,38 @@
+/* Clear margin and padding on site */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body{
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.columnContent {
+  flex: 80%;
+}
+
+.columnSidebar {
+  flex: 20%;
+}
+
+
 .App {
   text-align: center;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 
 /* NAVIGATION */
@@ -47,10 +44,13 @@ ul {
 
 li {
   /* Padding on the list nav to space things out */
-  padding: 16px;
+  padding: 0 8px 0 8px;
   /* Make list nav horziontal and center align */
   display: inline-block;
 }
 
-
-
+/* IMAGES */
+.defaultSize {
+  width: 350px;
+  height: 300px;
+}
