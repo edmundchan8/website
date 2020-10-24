@@ -7,16 +7,21 @@ export class Presentation extends Component {
     constructor(props) {
         super(props)
     
+        
         this.state = {
             // displayImage: require('../images/healthExplainedScreenShot.jpg'),
-            text: 'Content'
+
+            // sets the text for the context
+            contentText: 'Content'
         }
-        this.OnSetText = this.OnSetText.bind(this)
+        // binding the set text method
+        this.OnSetContextText = this.OnSetContextText.bind(this)
     }
 
-    OnSetText(newText){
+    // sets new text to, in our case, context text
+    OnSetContextText(newText){
         this.setState({
-            text: newText
+            contentText: newText
         })
     }
 
@@ -24,10 +29,15 @@ export class Presentation extends Component {
         return (
             <div className="row">
                 <div className="columnContent">
-                    <Content contentText={this.state.text} />
+
+                    {/* pass the text to content to show the header text */}
+                    <Content contentText={this.state.contentText} />
                 </div>
                 <div className="columnSidebar">
-                    <Sidebar setTextMethod={this.OnSetText}/>
+                    
+                    {/* we pass the settext method to sidebar, so method called will
+                    change content text */}
+                    <Sidebar setTextMethod={this.OnSetContextText}/>
                 </div>
             </div>
         )

@@ -21,7 +21,9 @@ function App() {
   return (
       <div className="App">
           <Navigation />
-          {/* <TextTitle /> */}
+          {/* Presentation component controls content and sidebar (due to the need
+            to have the method be handled by presentation and data passed to both components
+            through the use of Presentation component) */}
             <Presentation />
       </div>
   );
