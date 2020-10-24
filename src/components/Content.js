@@ -18,11 +18,9 @@ class Content extends Component {
       `;
       
         return (
-            <StyledDiv>
-                <div>
+            <StyledDiv className="columnContent">
                     <h1>{this.props.contentText}</h1>
                     {/* <img src={this.state.displayImage} className="defaultSize" /> */}
-                </div>
             </StyledDiv>
         )
     }

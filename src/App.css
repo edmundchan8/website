@@ -5,26 +5,24 @@ html, body {
   height: 100%;
 }
 
-
 * {
   box-sizing: border-box;
 }
 
-
 .row {
   display: flex;
   flex-direction: row;
-  height: 100%;
 }
 
 .columnContent {
-  flex: 80%;
+  flex-grow : 8;
+  height: 80vh;
 }
 
 .columnSidebar {
-  flex: 20%;
+  flex-grow : 1;
+  height: 80vh;
 }
-
 
 .App {
   text-align: center;
