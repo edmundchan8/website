@@ -4,7 +4,8 @@ import '../App.css';
 class PortfolioOrcaStars extends Component {
     render() {
         return (
-            <div>
+            <React.Fragment>
+                <h1>Orcastarts Web Application</h1>
                 <a href="https://github.com/Cascadia-Connections/orca-stars">
                     <img className='defaultSize' src={require('../images/orcastars.png')} alt="Cartoon image of an Orca, the Orca Conservancy logo" />
 
@@ -13,7 +14,7 @@ class PortfolioOrcaStars extends Component {
                     <p>Orcastars Web application 
                         <br/>ASP.NET Core, C#, HTML, CSS, Javascript</p>
                 </div>
-            </div>
+            </React.Fragment>
         )
     }
 }

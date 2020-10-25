@@ -7,13 +7,14 @@ class Sidebar extends Component {
         super(props)
     
         this.state = {
-             sideText: 'Sidebar'
+             portfolioCoffeeComponent: 'portfolioCoffeeCalculator',
+             portfolioOrcaComponent: 'portfolioOrcaStars'
         }
-        this.changeHeader = this.changeHeader.bind(this)
+        this.changeContent = this.changeContent.bind(this)
     }
 
-    changeHeader(){
-        this.props.setTextMethod(this.state.sideText)
+    changeContent(param){
+        this.props.setComponent(param)
     }
 
     render() {
@@ -24,13 +25,16 @@ class Sidebar extends Component {
         border-radius: 25px;
       `;
         return (
-            <StyledDiv>
+            <React.Fragment>
+            <StyledDiv className="columnSidebar">
                 <div>
-                    <h3>Coffee Calculator</h3>
-                    <button onClick ={this.changeHeader}>Click ME</button>
-                    {/* <h3 onMouseOver={ () => this.props ("../images/coffeeCalculatorScreenShot.jpg")} >Coffee Calculator</h3> */}
+                    <h3 onClick ={() => this.changeContent(this.state.portfolioCoffeeComponent)}>Coffee Calculator</h3>
+                </div>
+                <div>
+                    <h3 onClick ={() => this.changeContent(this.state.portfolioOrcaComponent)}>OrcaStars Convservancy</h3>
                 </div>
             </StyledDiv>
+            </React.Fragment>
         )
     }
 }

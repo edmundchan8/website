@@ -15,12 +15,12 @@ html, body {
 }
 
 .columnContent {
-  flex-grow : 8;
+  width: 80%;
   height: 80vh;
 }
 
 .columnSidebar {
-  flex-grow : 1;
+  flex-grow : 2;
   height: 80vh;
 }
 

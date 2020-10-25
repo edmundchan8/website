@@ -3,11 +3,6 @@ import styled from 'styled-components'
 import '../App.css'
 
 class Content extends Component {
-    // SetImgArray = (image) => {
-    //     this.setState = ({
-    //         displayImage: require({image})
-    //     })
-    // }
 
     render() {
         const StyledDiv = styled.div`
@@ -19,8 +14,8 @@ class Content extends Component {
       
         return (
             <StyledDiv className="columnContent">
-                    <h1>{this.props.contentText}</h1>
-                    {/* <img src={this.state.displayImage} className="defaultSize" /> */}
+                {/* accepts the render component method from presentation component to display content here */}
+                {this.props.renderComponentMethod}
             </StyledDiv>
         )
     }

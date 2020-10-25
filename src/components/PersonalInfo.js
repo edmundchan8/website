@@ -1,14 +1,11 @@
 import React, { Component } from 'react'
-import styled from "styled-components";
 
 class PersonalInfo extends Component {
     
     render() {
-        const StyledDiv = styled.div`
-        border: solid red 5px ;
-      `;
         return (
-            <StyledDiv>
+            <React.Fragment>
+                <h1>About Me</h1>
                 <img src={require('../images/profilePic.jpeg')} alt={"me"} />
                 <div>
                     <h2>Hi there!</h2>
@@ -16,7 +13,7 @@ class PersonalInfo extends Component {
                     well as HTML, CSS, Javascript, JQuery and ASP.NET Core. I'm also experienced with designing webpages through
                     Adobe Photoshop, Illustrator and GIMP as well as creating and managing databases with SQL.</p>
                 </div>
-            </StyledDiv>
+            </React.Fragment>
         )
     }
 }
